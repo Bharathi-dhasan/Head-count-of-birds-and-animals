@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main
+{
+   public static void main(String[]args)
+	{
+		Scanner s=new Scanner(System.in);
+		int Total_Head_count=s.nextInt();
+		int Total_Leg_count=s.nextInt();
+		int Birds=0,Animals=0;
+		Birds=((Total_Head_count*4)-Total_Leg_count)/2;
+       		Animals=Total_Head_count-Birds;
+		System.out.println(Birds+" "+Animals);
+	}
+}
